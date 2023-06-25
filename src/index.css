@@ -5,6 +5,7 @@
   font-family: 'Playfair Display', serif;
 }
 .maincontent{
+  background-image: url('./assets/image.png');
   background-color: blue;
   width: 100%;
   height: 100px;
