@@ -8,23 +8,18 @@
 }
 .maincontent {
   height: 100vh;
-  background: url("./assets/yellow-bg.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 0%;
-
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 50px;
+  padding: 20px 20px;
 }
 header h1 {
   font-size: 18px;
 }
 nav ul {
-  display: flex;
-  padding-right: 90px;
+  display: none;
 }
 nav ul li {
   display: inline-block;
@@ -43,9 +38,8 @@ nav ul li:hover, .button:hover{
   align-items: center;
 }
 .stack {
-  width: 60%;
   text-align: left;
-  padding: 10px 50px;
+  padding: 10px 20px;
 }
 .stack h2 {
   color: #fdc435;
@@ -66,24 +60,16 @@ nav ul li:hover, .button:hover{
   font-size: 64px;
   font-weight: 700;
   line-height: 120%;
-  width: 72%;
+
 }
 .stack p {
-  width: 72%;
   font-size: 24px;
   font-family: Nunito;
   line-height: 150%;
   margin: 20px 0px;
 }
 .imageSec {
-  width: 40%;
-}
-.image {
-  display: block;
-  width: 280px;
-  height: 420px;
-  object-fit: none;
-  margin: 0 auto;
+  display: none;
 }
 .button{
   padding: 10px 15px;
@@ -97,4 +83,45 @@ nav ul li:hover, .button:hover{
 }
 .linkedin{
   margin-left: 10px;
+}
+
+@media(min-width:1024px) {
+  .maincontent {
+    background: url("./assets/yellow-bg.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+  
+  } 
+  nav {
+    padding: 20px 50px;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  nav ul {
+    display: flex;
+    padding-right: 90px;
+  }
+  .stack {
+    width: 60%;
+    text-align: left;
+    padding: 10px 50px;
+  }
+  .stack h3 {
+    width: 72%;
+  }
+  .stack p {
+    width: 72%;
+  }
+  .imageSec {
+    display: block;
+    width: 40%;
+  }
+  .image {
+    display: block;
+    width: 280px;
+    height: 420px;
+    object-fit: none;
+    margin: 0 auto;
+  }
 }
