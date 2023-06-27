@@ -6,6 +6,9 @@
   text-decoration: none;
   list-style: none;
 }
+body{
+  background-color: #E5E5E5;
+}
 .maincontent {
   height: 100vh;
 }
@@ -90,7 +93,6 @@ nav ul li:hover, .button:hover{
     background: url("./assets/yellow-bg.svg");
     background-repeat: no-repeat;
     background-position: 100% 0%;
-  
   } 
   nav {
     padding: 20px 50px;
