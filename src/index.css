@@ -6,8 +6,8 @@
   text-decoration: none;
   list-style: none;
 }
-body{
-  background-color: #E5E5E5;
+body {
+  background-color: #e5e5e5;
 }
 .maincontent {
   height: 100vh;
@@ -20,7 +20,7 @@ nav {
 }
 header h1 {
   font-size: 18px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 nav ul {
   display: none;
@@ -30,9 +30,10 @@ nav ul li {
   padding-right: 30px;
   font-size: 18px;
   font-weight: 500;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-nav ul li:hover, .button:hover{
+nav ul li:hover,
+.button:hover {
   color: aliceblue;
   transform: scale(0.89);
   transition: 0.5s;
@@ -51,15 +52,16 @@ nav ul li:hover, .button:hover{
   color: #fdc435;
   text-transform: uppercase;
   font-size: 20px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   margin-bottom: 10px;
   animation: myAnimation 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 @keyframes myAnimation {
-  0%, 100%{
+  0%,
+  100% {
     opacity: 1;
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
 }
@@ -67,18 +69,17 @@ nav ul li:hover, .button:hover{
   font-size: 64px;
   font-weight: 700;
   line-height: 120%;
-
 }
 .stack p {
   font-size: 24px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 150%;
   margin: 20px 0px;
 }
 .imageSec {
   display: none;
 }
-.button{
+.button {
   padding: 10px 24px;
   font-family: Roboto;
   font-size: 18px;
@@ -86,19 +87,35 @@ nav ul li:hover, .button:hover{
   border: none;
   border-radius: 5px;
 }
-.button:focus{
+.button:focus {
   background-color: #fdc435;
 }
-.linkedin{
+.linkedin {
   margin-left: 10px;
 }
+.myprojects header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.myprojects header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+.myprojects header hr {
+  border: 4px solid #fdc435;
+  width: 100px;
+  border-radius: 2px;
+}
 
-@media(min-width:1024px) {
+@media (min-width: 1024px) {
   .maincontent {
     background: url("./assets/yellow-bg.svg");
     background-repeat: no-repeat;
     background-position: 100% 0%;
-  } 
+  }
   nav {
     padding: 20px 50px;
   }
