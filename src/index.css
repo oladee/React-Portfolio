@@ -112,10 +112,10 @@ nav ul li:hover,
 }
 
 .cardSection {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .card {
   display: flex;
@@ -178,7 +178,7 @@ nav ul li:hover,
     margin: 0 auto;
   }
   .leftpane p {
-    width: 420px;
+    width: 400px;
     
   }
   
