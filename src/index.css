@@ -20,6 +20,7 @@ nav {
 }
 header h1 {
   font-size: 18px;
+  font-family: 'Comfortaa', cursive;
 }
 nav ul {
   display: none;
@@ -28,6 +29,8 @@ nav ul li {
   display: inline-block;
   padding-right: 30px;
   font-size: 18px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
 }
 nav ul li:hover, .button:hover{
   color: aliceblue;

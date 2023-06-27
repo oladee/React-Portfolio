@@ -22,7 +22,7 @@ const Hero = () => {
             career. You can add more information on the about page.
           </p>
           <div className="buttonSec">
-            <Button className="Projects button">
+            <Button className="Projects button" disabled>
             Projects
             </Button>
             <Button className="linkedin button">
@@ -40,8 +40,8 @@ const Hero = () => {
 
 export default Hero;
 
-export function Button({children, className}){
+export function Button({children, className, ...props}){
   return(<>
-  <button className={className}>{children}</button>
+  <button className={className} {...props}>{children}</button>
   </>)
 }
