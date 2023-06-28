@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from './Contact'
 import Hero from './Hero'
 import Projects from './Projects'
 
@@ -7,6 +8,7 @@ const Landing = () => {
     <div>
       <Hero/>
       <Projects/>
+      <Contact/>
     </div>
   )
 }
