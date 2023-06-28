@@ -94,7 +94,7 @@ nav ul li:hover,
 .linkedin {
   margin-left: 10px;
 }
-header {
+.myprojects header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,6 +180,8 @@ input,textarea{
     background-position: 100% 0%;
   }
   nav {
+    display: flex;
+    align-items: center;
     padding: 20px 50px;
   }
   header h1 {
@@ -187,7 +189,6 @@ input,textarea{
   }
   nav ul {
     display: flex;
-    align-items: center;
     padding-right: 90px;
   }
   .stack {

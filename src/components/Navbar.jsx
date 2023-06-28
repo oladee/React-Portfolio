@@ -9,7 +9,7 @@ const Navbar = () => {
         </header>
         <ul>
           <li>About</li>
-          <li><Link to="">Projects</Link> </li>
+          <li><Link>Projects</Link> </li>
           <li>Contact us</li>
         </ul>
       </nav>

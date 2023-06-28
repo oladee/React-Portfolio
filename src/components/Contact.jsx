@@ -14,7 +14,7 @@ const Contact = () => {
   });
   return (
     <>
-      <div>
+      <div className='myprojects'>
         <header>
           <h2>Projects</h2>
           <hr />
