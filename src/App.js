@@ -1,15 +1,15 @@
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import { Route, Routes } from "react-router-dom";
+import Landing from "./components/Landing";
 
 function App() {
   return (
     <div className="App">
-     <Hero/>
-     <Projects/>
-     <Footer/>
+      <Routes>
+        <Route path="/" element={<Landing/>}/>
+      </Routes>
     </div>
   );
+
 }
 
 export default App;

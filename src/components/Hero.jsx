@@ -1,18 +1,11 @@
 import React from "react";
 import mypic from '../assets/Snapchat-1659820388.jpg'
+import Navbar from "./Navbar";
+
 const Hero = () => {
   return (
     <div className="maincontent">
-      <nav>
-        <header>
-          <h1>Momoh Oladimeji</h1>
-        </header>
-        <ul>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact us</li>
-        </ul>
-      </nav>
+      <Navbar/>
       <div className="writeup">
         <div className="stack">
           <h2>Front-end Developer</h2>
@@ -22,7 +15,7 @@ const Hero = () => {
             career. You can add more information on the about page.
           </p>
           <div className="buttonSec">
-            <Button className="Projects button" disabled>
+            <Button className="Projects button">
             Projects
             </Button>
             <Button className="linkedin button">

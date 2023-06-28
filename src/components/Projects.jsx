@@ -3,7 +3,7 @@ import image from '../assets/image.png'
 
 const Projects = () => {
   return (
-    <div className='myprojects'>
+    <div className='myprojects' id='projects'>
         <header>
             <h2>Projects</h2>
             <hr />
