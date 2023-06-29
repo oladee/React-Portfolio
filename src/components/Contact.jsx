@@ -62,7 +62,7 @@ const Contact = () => {
           <div>
             <label htmlFor="name">
               Name
-              <input type="text" name="first" />
+              <input type="text" name="name" />
             </label>
           </div>
           <button type="submit"> submit</button>
