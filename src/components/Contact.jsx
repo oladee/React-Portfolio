@@ -40,7 +40,7 @@ const Contact = () => {
               />
             </div>
             {formik.touched.name && formik.errors.name ? (
-              <div>{formik.errors.name}</div>
+              <div className="error">{formik.errors.name}*</div>
             ) : null}
             <div>
               <label htmlFor="email">Email</label>
@@ -54,7 +54,7 @@ const Contact = () => {
               />
             </div>
             {formik.touched.email && formik.errors.email ? (
-              <div>{formik.errors.email}</div>
+              <div className="error">{formik.errors.email}*</div>
             ) : null}
             <div>
               <label htmlFor="message">Message</label>
@@ -69,7 +69,7 @@ const Contact = () => {
               ></textarea>
             </div>
             {formik.touched.message && formik.errors.message ? (
-              <div>{formik.errors.message}</div>
+              <div className="error">{formik.errors.message}*</div>
             ): null}
           </div>
           <Button type='submit' className="button" disabled={formik.dirty}>Send</Button>
