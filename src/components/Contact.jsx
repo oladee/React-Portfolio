@@ -15,7 +15,8 @@ const Contact = () => {
       message: Yup.string().min(3, 'Minimum of three characters allowed, can\'t wait to hear from you')
     }),
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      alert('Thanks for reaching out, will get back as soon as possible');
+      formik.setSubmitting(false)
     },
   });
   return (
@@ -72,7 +73,7 @@ const Contact = () => {
               <div className="error">{formik.errors.message}*</div>
             ): null}
           </div>
-          <Button type='submit' className="button" disabled={formik.dirty}>Send</Button>
+          <Button type='submit' className="button" disabled={formik.isSubmitting}>Send</Button>
         </form>
       </div>
     </>
