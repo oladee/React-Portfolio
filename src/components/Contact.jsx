@@ -56,6 +56,16 @@ const Contact = () => {
           </div>
           <Button type='submit' className="button">Send</Button>
         </form>
+
+        <form onSubmit='submit' method="post" name="contactless" netlify>
+        <input type="hidden" name="form-name" value="contactless" />
+        <div>
+        <label htmlFor="name">Name
+        <input type="text" name="first" />
+        </label>
+        </div>
+        <button type="submit"> submit</button>
+        </form>
       </div>
     </>
   );
