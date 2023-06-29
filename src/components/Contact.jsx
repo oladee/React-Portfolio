@@ -26,7 +26,7 @@ const Contact = () => {
           <h2>Contact</h2>
           <hr />
         </header>
-        <form name="contactless" method="post" onSubmit={formik.handleSubmit} netlify>
+        <form name="contactless" method="post" netlify>
         <input type="hidden" name="form-name" value="contactless" />
           <div className="forme">
             <div>
