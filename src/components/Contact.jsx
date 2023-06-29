@@ -16,10 +16,11 @@ const Contact = () => {
     <>
       <div className='myprojects'>
         <header>
-          <h2>Projects</h2>
+          <h2>Contact</h2>
           <hr />
         </header>
-        <form onSubmit={formik.handleSubmit} netlify>
+        <form onSubmit='submit' name="contact" method="post" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
           <div className="forme">
             <div>
               <label htmlFor="name">Name</label>
@@ -53,7 +54,7 @@ const Contact = () => {
               ></textarea>
             </div>
           </div>
-          <Button className="button">Send</Button>
+          <Button type='submit' className="button">Send</Button>
         </form>
       </div>
     </>
