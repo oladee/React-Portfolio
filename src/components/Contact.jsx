@@ -1,20 +1,20 @@
 import React from "react";
-import { useFormik } from "formik";
-import { Button } from "./Hero";
+// import { useFormik } from "formik";
+// import { Button } from "./Hero";
 const Contact = () => {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
+  // const formik = useFormik({
+  //   initialValues: {
+  //     name: "",
+  //     email: "",
+  //     message: "",
+  //   },
+  //   onSubmit: (values) => {
+  //     alert(JSON.stringify(values, null, 2));
+  //   },
+  // });
   return (
     <>
-      <div className='myprojects'>
+      <div className="myprojects">
         <header>
           <h2>Contact</h2>
           <hr />
@@ -57,14 +57,15 @@ const Contact = () => {
           <Button type='submit' className="button">Send</Button>
         </form> */}
 
-        <form onSubmit='submit' method="post" name="contactless" netlify>
-        <input type="hidden" name="form-name" value="contactless" />
-        <div>
-        <label htmlFor="name">Name
-        <input type="text" name="first" />
-        </label>
-        </div>
-        <button type="submit"> submit</button>
+        <form onSubmit="submit" method="post" name="contactless" netlify>
+          <input type="hidden" name="form-name" value="contactless" />
+          <div>
+            <label htmlFor="name">
+              Name
+              <input type="text" name="first" />
+            </label>
+          </div>
+          <button type="submit"> submit</button>
         </form>
       </div>
     </>
