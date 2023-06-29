@@ -19,8 +19,8 @@ const Contact = () => {
           <h2>Contact</h2>
           <hr />
         </header>
-        <form onSubmit='submit' name="contact" method="post" netlify>
-        <input type="hidden" name="form-name" value="contact" />
+        <form onSubmit='submit' name="contactify" method="post" netlify>
+        <input type="hidden" name="form-name" value="contactify" />
           <div className="forme">
             <div>
               <label htmlFor="name">Name</label>
