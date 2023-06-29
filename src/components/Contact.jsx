@@ -19,7 +19,7 @@ const Contact = () => {
           <h2>Contact</h2>
           <hr />
         </header>
-        <form onSubmit='submit' name="contact" method="post" data-netlify="true">
+        <form onSubmit='submit' name="contact" method="post" netlify>
         <input type="hidden" name="form-name" value="contact" />
           <div className="forme">
             <div>
