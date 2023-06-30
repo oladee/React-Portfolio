@@ -19,7 +19,7 @@ const Hero = () => {
             Projects
             </Button>
             <Button className="linkedin button">
-              Linkedin
+              <a href="https://www.linkedin.com/in/oladimeji-momoh-b5484b156/" target="_blank" rel="noopener noreferrer">Linkedin</a>
             </Button>
           </div>
         </div>

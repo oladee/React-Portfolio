@@ -8,7 +8,6 @@
 }
 body {
   background-color: #e5e5e5;
-  padding-bottom: 20px;
 }
 .maincontent {
   height: 100vh;
@@ -18,6 +17,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px;
+}
+.maincontent a{
+  color: #25282B;
+  font-size: 18px;
 }
 header h1 {
   font-size: 18px;
@@ -172,11 +175,27 @@ input,textarea{
   display: block;
   padding: 5px 10px;
   min-width: 300px;
+  margin-bottom: 5px;
   outline: none;
 }
 .error{
   color: rgb(180, 57, 57);
   margin: 5px 2px;
+}
+.footer{
+  background: url('./assets/Vector.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+label{
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  display: block;
+  font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 10px;
 }
 @media (min-width: 1024px) {
   .maincontent {
@@ -228,5 +247,9 @@ input,textarea{
     height: 100%;
     object-fit: cover;
   }
-  
+  .footer{
+    background: url('./assets/Vector.svg');
+    background-size: cover;
+    height: 400px;
+  }
 }

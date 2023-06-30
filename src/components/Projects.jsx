@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../assets/image.png'
+import { data } from '../data'
 
 const Projects = () => {
   return (
@@ -20,11 +21,20 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="cardSection">
+        {data.map(x => (<Card name={x.name} description={x.description} image={x.image}/>))}
+    </div>
+  )
+}
+
+export default Projects
+
+export function Card({name, description, image}){
+  return(<>
+  <div className="cardSection">
           <div className="card">
             <div className="leftpane">
-              <h3>Project Name</h3>
-              <p>I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+              <h3>{name}</h3>
+              <p>{description}</p>
               <button>View project</button>
             </div>
             <div className="rightpane">
@@ -32,9 +42,5 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      
-    </div>
-  )
+  </>)
 }
-
-export default Projects

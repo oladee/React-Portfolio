@@ -30,7 +30,7 @@ const Contact = () => {
         <input type="hidden" name="form-name" value="contactless" />
           <div className="forme">
             <div>
-              <label htmlFor="name">Name</label>
+              <label className="label" htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"
