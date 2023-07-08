@@ -16,7 +16,7 @@ const Hero = () => {
           </p>
           <div className="buttonSec">
             <Button className="Projects button">
-            Projects
+            <a href="#projects">Projects</a>
             </Button>
             <Button className="linkedin button">
               <a href="https://www.linkedin.com/in/oladimeji-momoh-b5484b156/" target="_blank" rel="noopener noreferrer">Linkedin</a>
