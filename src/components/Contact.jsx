@@ -73,7 +73,7 @@ const Contact = () => {
               <div className="error">{formik.errors.message}*</div>
             ): null}
           </div>
-          <Button type='submit' className="button" disabled={formik.isSubmitting}>Send</Button>
+          <Button type='submit' className="button" disabled={formik.dirty}>Send</Button>
         </form>
       </div>
     </>
