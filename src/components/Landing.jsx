@@ -6,8 +6,12 @@ import Projects from './Projects'
 const Landing = () => {
   return (
     <div>
+      <div>
       <Hero/>
+      </div>
+      <div>
       <Projects/>
+      </div>
       <Contact/>
     </div>
   )

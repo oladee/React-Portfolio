@@ -7,10 +7,7 @@
   list-style: none;
 }
 body {
-  background-color: #e5e5e5;
-}
-.maincontent {
-  height: 100vh;
+  background-color: #F9FAFF;
 }
 nav {
   display: flex;
@@ -22,9 +19,13 @@ nav {
   color: #25282B;
   font-size: 18px;
 }
-header h1 {
-  font-size: 18px;
-  font-family: "Comfortaa", cursive;
+header{
+  display: flex;
+  gap: 10px;
+}
+header img {
+  width: 30px;
+  display: block;
 }
 nav ul {
   display: none;
@@ -38,7 +39,7 @@ nav ul li {
   font-family: "Raleway", sans-serif;
 }
 nav ul li:hover,
-.button:hover, .leftpane button:hover{
+.button:hover, .rightpane button:hover, nav ul a:hover{
   color: aliceblue;
   transform: scale(0.89);
   transition: 0.5s;
@@ -101,7 +102,8 @@ nav ul li:hover,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 header h2 {
   font-size: 48px;
@@ -122,40 +124,39 @@ header hr {
 }
 .card {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   
 }
-.leftpane:hover,.rightpane:hover{
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+.card:hover{
   transform: scale(0.9);
   transition: 0.5s;
 }
-.leftpane{
-  background-color: #ffffff;
+.rightpane{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 130px 30px;
   justify-content: center;
   margin-bottom: 20px;
   border-radius: 20px 0px 0px 20px;
+  width: 70%;
 }
-.rightpane img{
+.leftpane {
   border-radius: 0px 20px 20px 0px;
 }
-.leftpane h3 {
+.rightpane h3 {
   font-size: 40px;
   font-weight: 700;
   line-height: 150%;
 }
-.leftpane p {
-  font-size: 18px;
+.rightpane p {
+  font-size: 14px;
   font-family: "Nunito", sans-serif;
   line-height: 150%;
-  padding: 15px 0px;
+  width: 50%;
 }
-.leftpane button{
+.rightpane button{
   padding: 10px 24px;
   border-radius: 24px;
   border:1px solid #25282B;
@@ -247,15 +248,14 @@ margin-bottom: 10px;
     margin-bottom: 150px;
     margin-left: 100px;
   }
-  .leftpane{
+  .rightpane{
     margin-bottom: 0;
   }
-  .leftpane p {
+  .rightpane p {
     width: 380px;
   }
-  .rightpane img{
-    height: 100%;
-    object-fit: cover;
+  .leftpane{
+    width: 50%;
   }
   .footer{
     background: url('./assets/Vector.svg');

@@ -15,18 +15,21 @@ const Contact = () => {
       message: Yup.string().min(3, 'Minimum of three characters allowed, can\'t wait to hear from you')
     }),
     onSubmit: (values) => {
+
       alert('Thanks for reaching out, will get back as soon as possible');
-      formik.setSubmitting(false)
     },
   });
   return (
-    <>
+    <div>
       <div className="myprojects">
         <header>
           <h2>Contact</h2>
           <hr />
         </header>
-        <form name="contactless" method="post" netlify>
+        <form name="contactless" onSubmit={(e)=>{
+          e.preventDefault()
+          formik.handleSubmit()
+        }} netlify>
         <input type="hidden" name="form-name" value="contactless" />
           <div className="forme">
             <div>
@@ -76,7 +79,7 @@ const Contact = () => {
           <Button type='submit' className="button" disabled={formik.dirty}>Send</Button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

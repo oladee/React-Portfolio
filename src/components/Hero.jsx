@@ -11,8 +11,7 @@ const Hero = () => {
           <h2>Front-end Developer</h2>
           <h3>Hello, my name is Momoh Oladimeji</h3>
           <p>
-            Short text with details about you, what you do or your professional
-            career. You can add more information on the about page.
+          Front-end engineer with 3+ years of experience in building and maintaining high-traffic web applications. Proven ability to use HTML, CSS, and JavaScript to create user-friendly and visually appealing interfaces with expertise in React.
           </p>
           <div className="buttonSec">
             <Button className="Projects button">
