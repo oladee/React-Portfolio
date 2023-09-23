@@ -124,26 +124,27 @@ header hr {
 }
 .card {
   display: flex;
-  width: 90%;
-  max-width: 700px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  width: 70%;
+  max-width: 650px;
+  background-color: white;
   
 }
-.card:hover{
-  transform: scale(0.9);
-  transition: 0.5s;
-}
+
 .rightpane{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px;
   border-radius: 20px 0px 0px 20px;
-  width: 70%;
 }
 .leftpane {
-  border-radius: 0px 20px 20px 0px;
+  width: 100%;
+}
+.leftpane img{
+  object-fit: contain;
+  width: 100%;
 }
 .rightpane h3 {
   font-size: 40px;
@@ -154,7 +155,6 @@ header hr {
   font-size: 14px;
   font-family: "Nunito", sans-serif;
   line-height: 150%;
-  width: 50%;
 }
 .rightpane button{
   padding: 10px 24px;
@@ -194,9 +194,9 @@ label{
   font-size: 1.2rem;
   display: block;
   font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-bottom: 10px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
 }
 .footer h2{
   padding-bottom: 100px;
@@ -240,6 +240,19 @@ margin-bottom: 10px;
     width: 30%;
 
   }
+  .card{
+    flex-wrap: nowrap;
+  }
+  .card:hover{
+    transform: scale(0.9);
+    transition: 0.8s;
+  }
+  .leftpane{
+    width: 50%;
+  }
+  .rightpane{
+    width: 50%;
+  }
   .image {
     display: block;
     width: 280px;
@@ -247,15 +260,6 @@ margin-bottom: 10px;
     object-fit: none;
     margin-bottom: 150px;
     margin-left: 100px;
-  }
-  .rightpane{
-    margin-bottom: 0;
-  }
-  .rightpane p {
-    width: 380px;
-  }
-  .leftpane{
-    width: 50%;
   }
   .footer{
     background: url('./assets/Vector.svg');
