@@ -1,10 +1,13 @@
-import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import linkedin from '../assets/bi_linkedin.svg'
 import insta from '../assets/ph_instagram-logo-fill.svg'
 import github from '../assets/icons8-github.svg'
 
+
+
 const Navbar = () => {
+
+
   return (
     <nav>
         <header>
@@ -13,9 +16,15 @@ const Navbar = () => {
           <Link to='https://github.com/oladee'><img src={github} alt="github icon" /></Link>
         </header>
         <ul>
-          <li> <NavLink to='/about'>About</NavLink> </li>
-          <li>Projects </li>
-          <li>Contact us</li>
+          <li> <NavLink to='/'>Home</NavLink> </li>
+          <li><Link onClick={(e)=>{
+            e.preventDefault()
+            window.scrollTo({
+              top: document.querySelector('#projects').offsetTop,
+              behavior: 'smooth'
+            })
+          }}>Projects </Link> </li>
+          <li><Link >Contact us</Link></li>
         </ul>
       </nav>
   )

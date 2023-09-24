@@ -13,7 +13,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 20px;
 }
 .maincontent a {
   color: #25282b;
@@ -29,17 +29,15 @@ header img {
 }
 nav ul {
   display: none;
-  align-items: center;
+  
 }
 nav ul li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
   font-size: 18px;
   font-weight: 500;
   font-family: "Raleway", sans-serif;
 }
-nav ul li:hover,
-.button:hover,
 .rightpane button:hover,
 nav ul a:hover {
   color: aliceblue;
@@ -158,6 +156,8 @@ header hr {
 .rightpane p {
   font-size: 14px;
   font-family: "Nunito", sans-serif;
+  margin: 20px 0px;
+  max-width: 300px;
   line-height: 150%;
 }
 .rightpane button {
@@ -212,7 +212,7 @@ label {
 }
 @media (min-width: 1024px) {
   .maincontent {
-    background: url("./assets/dp.png");
+    background: url("./assets/Yellow\ Inspiration\ Modern\ Instagram\ Profile\ Picture.png");
     background-repeat: no-repeat;
     background-size: 600px 600px;
     background-position: 100% 0%;
@@ -220,13 +220,14 @@ label {
   nav {
     display: flex;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 30px 20px 50px;
   }
   header h1 {
     font-size: 18px;
   }
   nav ul {
     display: flex;
+    align-items: center;
     padding-right: 90px;
   }
   .stack {

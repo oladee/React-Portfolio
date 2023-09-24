@@ -17,7 +17,7 @@ export default Projects
 
 export function Card({name, description, image}){
   return(<>
-  <div className="cardSection" >
+  <div className="cardSection"  >
           <div className="card">
             <div className='leftpane'>
               <img src={image} alt="" />

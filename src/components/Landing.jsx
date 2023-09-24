@@ -3,7 +3,7 @@ import Contact from './Contact'
 import Hero from './Hero'
 import Projects from './Projects'
 
-const Landing = () => {
+const Landing = ({ref}) => {
   return (
     <div>
       <div>
