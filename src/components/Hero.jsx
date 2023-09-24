@@ -1,6 +1,6 @@
 import React from "react";
-import mypic from '../assets/Snapchat-1659820388.jpg'
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -15,15 +15,14 @@ const Hero = () => {
           </p>
           <div className="buttonSec">
             <Button className="Projects button">
-            <a href="#projects">Projects</a>
+            <Link to="#projects">Projects</Link>
             </Button>
             <Button className="linkedin button">
-              <a href="https://www.linkedin.com/in/oladimeji-momoh-b5484b156/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              <Link to="https://www.linkedin.com/in/oladimeji-momoh-b5484b156/" target="_blank" rel="noopener noreferrer">Linkedin</Link>
             </Button>
           </div>
         </div>
         <div className="imageSec">
-          <img src={mypic} alt="" className="image"/>
         </div>
       </div>
     </div>

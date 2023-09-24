@@ -7,7 +7,7 @@
   list-style: none;
 }
 body {
-  background-color: #F9FAFF;
+  background-color: #f9faff;
 }
 nav {
   display: flex;
@@ -15,11 +15,11 @@ nav {
   justify-content: space-between;
   padding: 20px 20px;
 }
-.maincontent a{
-  color: #25282B;
+.maincontent a {
+  color: #25282b;
   font-size: 18px;
 }
-header{
+header {
   display: flex;
   gap: 10px;
 }
@@ -39,7 +39,9 @@ nav ul li {
   font-family: "Raleway", sans-serif;
 }
 nav ul li:hover,
-.button:hover, .rightpane button:hover, nav ul a:hover{
+.button:hover,
+.rightpane button:hover,
+nav ul a:hover {
   color: aliceblue;
   transform: scale(0.89);
   transition: 0.5s;
@@ -62,7 +64,8 @@ nav ul li:hover,
   animation: myAnimation 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 @keyframes myAnimation {
-  0%,100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -91,7 +94,7 @@ nav ul li:hover,
   border: none;
   border-radius: 5px;
 }
-.button:focus {
+.button:hover {
   background-color: #fdc435;
 }
 .linkedin {
@@ -126,25 +129,26 @@ header hr {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
+  
   max-width: 650px;
   background-color: white;
-  
 }
 
-.rightpane{
+.rightpane {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 20px;
+  width: 100%;
+  padding: 20px;
   border-radius: 20px 0px 0px 20px;
 }
 .leftpane {
   width: 100%;
 }
-.leftpane img{
-  object-fit: contain;
+.leftpane img {
   width: 100%;
+  object-fit: cover;
 }
 .rightpane h3 {
   font-size: 40px;
@@ -156,40 +160,41 @@ header hr {
   font-family: "Nunito", sans-serif;
   line-height: 150%;
 }
-.rightpane button{
+.rightpane button {
   padding: 10px 24px;
   border-radius: 24px;
-  border:1px solid #25282B;
+  border: 1px solid #25282b;
 }
-form .button{
+form .button {
   margin-top: 25px;
   margin-left: 220px;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-input,textarea{
+input,
+textarea {
   display: block;
   padding: 5px 10px;
   min-width: 300px;
   margin-bottom: 5px;
   outline: none;
 }
-.error{
+.error {
   color: rgb(180, 57, 57);
   margin: 5px 2px;
 }
-.footer{
-  background: url('./assets/Vector.svg');
-  background-size:cover;
+.footer {
+  background: url("./assets/Vector.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-label{
+label {
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   display: block;
@@ -198,16 +203,16 @@ label{
   line-height: normal;
   margin-bottom: 10px;
 }
-.footer h2{
+.footer h2 {
   padding-bottom: 100px;
   font-size: 14px;
 }
-.footer ul{
+.footer ul {
   padding-top: 50px;
 }
 @media (min-width: 1024px) {
   .maincontent {
-    background: url("./assets/yellow-bg.svg");
+    background: url("./assets/dp.png");
     background-repeat: no-repeat;
     background-size: 600px 600px;
     background-position: 100% 0%;
@@ -238,19 +243,18 @@ label{
   .imageSec {
     display: block;
     width: 30%;
-
   }
-  .card{
+  .card {
     flex-wrap: nowrap;
   }
-  .card:hover{
+  .card:hover {
     transform: scale(0.9);
     transition: 0.8s;
   }
-  .leftpane{
+  .leftpane {
     width: 50%;
   }
-  .rightpane{
+  .rightpane {
     width: 50%;
   }
   .image {
@@ -261,13 +265,13 @@ label{
     margin-bottom: 150px;
     margin-left: 100px;
   }
-  .footer{
-    background: url('./assets/Vector.svg');
+  .footer {
+    background: url("./assets/Vector.svg");
     background-size: cover;
     height: 400px;
-    
   }
-  input,textarea{
+  input,
+  textarea {
     min-width: 400px;
     margin-bottom: 5px;
     outline: none;
