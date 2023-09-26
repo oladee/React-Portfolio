@@ -24,7 +24,13 @@ const Navbar = () => {
               behavior: 'smooth'
             })
           }}>Projects </Link> </li>
-          <li><Link >Contact us</Link></li>
+          <li><Link onClick={(e)=>{
+            e.preventDefault()
+            window.scrollTo({
+              top: document.querySelector('#contact').offsetTop,
+              behavior: 'smooth'
+            })
+          }}>Contact us</Link></li>
         </ul>
       </nav>
   )

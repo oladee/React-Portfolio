@@ -38,7 +38,7 @@ nav ul li {
   font-weight: 500;
   font-family: "Raleway", sans-serif;
 }
-.rightpane button:hover,
+
 nav ul a:hover {
   color: aliceblue;
   transform: scale(0.89);
@@ -93,6 +93,7 @@ nav ul a:hover {
   border-radius: 5px;
 }
 .button:hover {
+  transition: 0.8s;
   background-color: #fdc435;
 }
 .linkedin {
@@ -276,5 +277,9 @@ label {
     min-width: 400px;
     margin-bottom: 5px;
     outline: none;
+  }
+  .rightpane button:hover{
+  background-color: #fdc435;
+  cursor: pointer;
   }
 }
