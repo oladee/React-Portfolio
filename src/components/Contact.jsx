@@ -12,7 +12,7 @@ const Contact = () => {
     validationSchema: Yup.object({
       name: Yup.string().max(15, 'maximum of 15 characters or less').required('Required field'),
       email: Yup.string().email('Invalid email address, Please check!').required('Required field'),
-      message: Yup.string().min(3, 'Minimum of three characters allowed, can\'t wait to hear from you')
+      message: Yup.string().min(3, 'Minimum of three characters allowed, can\'t wait to hear from you').required('Required field')
     }),
     onSubmit: (values) => {
 
