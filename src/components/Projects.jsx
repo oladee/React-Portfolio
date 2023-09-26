@@ -1,5 +1,6 @@
 import React from 'react'
 import { data } from '../data'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
@@ -8,14 +9,14 @@ const Projects = () => {
             <h2>Projects</h2>
             <hr />
         </header>
-        {data.map(x => (<Card name={x.name} description={x.description} image={x.image}/>))}
+        {data.map(x => (<Card name={x.name} description={x.description} image={x.image} link={x.url}/>))}
     </div>
   )
 }
 
 export default Projects
 
-export function Card({name, description, image}){
+export function Card({name, description, image,link}){
   return(<>
   <div className="cardSection"  >
           <div className="card">
@@ -25,7 +26,7 @@ export function Card({name, description, image}){
             <div className="rightpane">
               <h3>{name}</h3>
               <p>{description}</p>
-              <button>View project</button>
+              <Link to={link} target='blank'>View project</Link>
             </div>
           </div>
         </div>

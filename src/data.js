@@ -11,5 +11,11 @@ export const data = [
         url: 'https://oladee.github.io/MetaBnB/',
         image: '/assets/Rec2.svg'
     },
+    {
+        name: 'Image Gallery App',
+        description: 'This is a image gallery where users can interact by through drag and drop functionalities and also search through the library for different queries of images. Image result is limited to 8',
+        url: 'https://image-dnd.netlify.app/',
+        image: '/assets/Rec3.svg'
+    },
 
 ]

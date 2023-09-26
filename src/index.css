@@ -161,7 +161,8 @@ header hr {
   max-width: 300px;
   line-height: 150%;
 }
-.rightpane button {
+.rightpane a {
+  color: #25282b;
   padding: 10px 24px;
   border-radius: 24px;
   border: 1px solid #25282b;
@@ -278,7 +279,7 @@ label {
     margin-bottom: 5px;
     outline: none;
   }
-  .rightpane button:hover{
+  .rightpane a:hover{
   background-color: #fdc435;
   cursor: pointer;
   }
